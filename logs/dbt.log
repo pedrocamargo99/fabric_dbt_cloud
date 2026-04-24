@@ -1,0 +1,29 @@
+[0m09:41:35.100084 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000242772472F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002427488CC20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024277247830>]}
+
+
+============================== 09:41:35.107844 | f708263c-8d3c-457a-8cf1-17f1936822aa ==============================
+[0m09:41:35.107844 [info ] [MainThread]: Running with dbt=1.11.8
+[0m09:41:35.107844 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\pedro.camargo\\.dbt', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt init', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m09:41:50.455527 [debug] [MainThread]: Starter project path: C:\Users\pedro.camargo\AppData\Local\Programs\Python\Python312\Lib\site-packages\dbt\include\starter_project
+[0m09:41:50.480351 [info ] [MainThread]: 
+Your new dbt project "fabric_cloud" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m09:41:50.481353 [info ] [MainThread]: Setting up your profile.
+[0m09:41:55.485738 [info ] [MainThread]: No sample profile found for fabric.
+[0m09:41:55.486612 [debug] [MainThread]: Command `dbt init` succeeded at 09:41:55.486612 after 20.60 seconds
+[0m09:41:55.486612 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000242769F7FB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024278B3B6E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024278C8F200>]}
+[0m09:41:55.486612 [debug] [MainThread]: Flushing usage events
+[0m09:41:56.593208 [debug] [MainThread]: An error was encountered while trying to flush usage events
