@@ -1,0 +1,4 @@
+logs/
+fabric_cloud/.venv/
+fabric_cloud/venv/
+fabric_cloud/load_env.ps1

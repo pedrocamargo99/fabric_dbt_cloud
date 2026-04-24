@@ -1,0 +1,21 @@
+version: 2
+
+sources:
+  - name: dbt_seed
+    database: dbt_teste
+    schema: dbo
+    freshness:
+      warn_after: {count: 3600, period: minute}
+      error_after: {count: 3600, period: minute}
+
+
+    tables:
+      - name: raw_payments
+        loaded_at_field: sys_ingestion_ts
+
+      - name: raw_orders
+        loaded_at_field: sys_ingestion_ts
+
+      - name: raw_customers
+        loaded_at_field: sys_ingestion_ts
+
