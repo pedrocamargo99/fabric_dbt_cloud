@@ -5,17 +5,17 @@ sources:
     database: dbt_teste
     schema: dbo
     freshness:
-      warn_after: {count: 3600, period: minute}
-      error_after: {count: 3600, period: minute}
+      warn_after: {count: 10, period: minute}
+      error_after: {count: 5, period: minute}
 
 
     tables:
       - name: raw_payments
-        loaded_at_field: sys_ingestion_ts
+        loaded_at_field: created_at
 
       - name: raw_orders
-        loaded_at_field: sys_ingestion_ts
+        loaded_at_field: created_at
 
       - name: raw_customers
-        loaded_at_field: sys_ingestion_ts
+        loaded_at_field: created_at
 
