@@ -1,0 +1,15 @@
+fabric_cloud:
+  target: fabric_cloud
+  outputs:
+    fabric_cloud:
+      type: fabric
+      server: "{{ env_var('DBT_FABRIC_SERVER') }}"
+      database: "{{ env_var('DBT_FABRIC_DATABASE') }}"
+      driver: "ODBC Driver 18 for SQL Server"
+      schema: "{{ env_var('DBT_FABRIC_SCHEMA') }}"
+      threads: 4
+      authentication: ServicePrincipal
+      tenant_id: "{{ env_var('DBT_FABRIC_TENANT_ID') }}"
+      client_id: "{{ env_var('DBT_FABRIC_CLIENT_ID') }}"
+      client_secret: "{{ env_var('DBT_FABRIC_CLIENT_SECRET') }}"
+      
